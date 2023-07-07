@@ -17,6 +17,9 @@
           "appId": "d1sqhf9zcyzksg",
           "type": "cicd"
         }
+      },
+      "auth": {
+        "reebelotest1855a6b6": {}
       }
     }
   }
