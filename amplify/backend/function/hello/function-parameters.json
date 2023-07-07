@@ -1,3 +1,13 @@
 {
-  "lambdaLayers": []
+  "lambdaLayers": [],
+  "permissions": {
+    "storage": {
+      "reebelotest": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  }
 }

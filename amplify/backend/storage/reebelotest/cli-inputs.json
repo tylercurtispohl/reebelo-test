@@ -1,0 +1,29 @@
+{
+  "resourceName": "reebelotest",
+  "tableName": "product",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "CategoryIndex",
+      "partitionKey": {
+        "fieldName": "category",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "name",
+        "fieldType": "string"
+      }
+    },
+    {
+      "name": "NameIndex",
+      "partitionKey": {
+        "fieldName": "name",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}
