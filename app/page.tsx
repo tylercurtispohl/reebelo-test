@@ -1,11 +1,9 @@
 "use client";
-import Image from "next/image";
 import "@aws-amplify/ui-react/styles.css";
 import { Amplify, API, Auth } from "aws-amplify";
 import awsExports from "../src/aws-exports";
-import { useAuthenticator, withAuthenticator } from "@aws-amplify/ui-react";
+import { withAuthenticator } from "@aws-amplify/ui-react";
 import awsconfig from "../src/aws-exports";
-import { AmplifyUser, AuthEventData } from "@aws-amplify/ui";
 
 Amplify.configure({ ...awsExports, ssr: true });
 Auth.configure(awsconfig);
@@ -14,13 +12,7 @@ const withAuthenticatorOptions = {
   hideSignUp: true,
 };
 
-export default withAuthenticator(function Home({
-  signOut,
-  user,
-}: {
-  signOut: ((data?: AuthEventData | undefined) => void) | undefined;
-  user: AmplifyUser | undefined;
-}) {
+export default withAuthenticator(function Home({ signOut, user }) {
   async function callApi() {
     const authenticatedUser = await Auth.currentAuthenticatedUser();
     const token = authenticatedUser.signInUserSession.idToken.jwtToken;
@@ -47,5 +39,4 @@ export default withAuthenticator(function Home({
       </div>
     </main>
   );
-},
-withAuthenticatorOptions);
+}, withAuthenticatorOptions);
