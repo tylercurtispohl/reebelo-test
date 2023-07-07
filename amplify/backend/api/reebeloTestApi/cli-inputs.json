@@ -10,8 +10,26 @@
         "guest": ["read"]
       }
     },
+    "/products/{productId}": {
+      "name": "/products/{productId}",
+      "lambdaFunction": "productCrud",
+      "permissions": {
+        "setting": "protected",
+        "auth": ["create", "read", "update", "delete"],
+        "guest": ["read"]
+      }
+    },
     "/orders": {
       "name": "/orders",
+      "lambdaFunction": "orderCrud",
+      "permissions": {
+        "setting": "protected",
+        "auth": ["create", "read", "update", "delete"],
+        "guest": ["read"]
+      }
+    },
+    "/orders/{orderId}": {
+      "name": "/orders/{orderId}",
       "lambdaFunction": "orderCrud",
       "permissions": {
         "setting": "protected",
