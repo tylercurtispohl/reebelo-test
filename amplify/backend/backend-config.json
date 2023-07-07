@@ -1,4 +1,20 @@
 {
+  "api": {
+    "helloapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hello"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "reebelotest1855a6b6": {
       "customAuth": false,
@@ -25,6 +41,13 @@
       "service": "Cognito"
     }
   },
+  "function": {
+    "hello": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "lastPushTimeStamp": "2023-07-07T16:16:26.902Z",
@@ -33,6 +56,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_hello_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hello"
+        }
+      ]
+    },
+    "AMPLIFY_function_hello_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hello"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {

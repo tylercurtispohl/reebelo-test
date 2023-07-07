@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-reebelotest-dev-83030-unauthRole",
       "StackName": "amplify-reebelotest-dev-83030",
       "StackId": "arn:aws:cloudformation:us-west-1:018973276024:stack/amplify-reebelotest-dev-83030/35b69dc0-1cdb-11ee-a516-0619470279b1",
-      "AmplifyAppId": "d1sqhf9zcyzksg"
+      "AmplifyAppId": "d1sqhf9zcyzksg",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-reebelotest-dev-83030-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "hosting": {
@@ -20,6 +21,15 @@
       },
       "auth": {
         "reebelotest1855a6b6": {}
+      },
+      "function": {
+        "hello": {
+          "deploymentBucketName": "amplify-reebelotest-dev-83030-deployment",
+          "s3Key": "amplify-builds/hello-6f466f6b5a2b74727a49-build.zip"
+        }
+      },
+      "api": {
+        "helloapi": {}
       }
     }
   }
