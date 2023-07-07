@@ -6,31 +6,17 @@
       "lambdaFunction": "productCrud",
       "permissions": {
         "setting": "protected",
-        "auth": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ],
-        "guest": [
-          "read"
-        ]
+        "auth": ["create", "read", "update", "delete"],
+        "guest": ["read"]
       }
     },
-    "/products/{id}": {
-      "name": "/products/{id}",
+    "/products/{productId}": {
+      "name": "/products/{productId}",
       "lambdaFunction": "productCrud",
       "permissions": {
         "setting": "protected",
-        "auth": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ],
-        "guest": [
-          "read"
-        ]
+        "auth": ["create", "read", "update", "delete"],
+        "guest": ["read"]
       }
     },
     "/orders": {
@@ -38,31 +24,17 @@
       "lambdaFunction": "orderCrud",
       "permissions": {
         "setting": "protected",
-        "auth": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ],
-        "guest": [
-          "read"
-        ]
+        "auth": ["create", "read", "update", "delete"],
+        "guest": ["read"]
       }
     },
-    "/orders/{id}": {
-      "name": "/orders/{id}",
+    "/orders/{orderId}": {
+      "name": "/orders/{orderId}",
       "lambdaFunction": "orderCrud",
       "permissions": {
         "setting": "protected",
-        "auth": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ],
-        "guest": [
-          "read"
-        ]
+        "auth": ["create", "read", "update", "delete"],
+        "guest": ["read"]
       }
     }
   }
