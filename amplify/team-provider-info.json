@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reebelotest-dev-83030-authRole",
+      "UnauthRoleArn": "arn:aws:iam::018973276024:role/amplify-reebelotest-dev-83030-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::018973276024:role/amplify-reebelotest-dev-83030-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-reebelotest-dev-83030-deployment",
+      "UnauthRoleName": "amplify-reebelotest-dev-83030-unauthRole",
+      "StackName": "amplify-reebelotest-dev-83030",
+      "StackId": "arn:aws:cloudformation:us-west-1:018973276024:stack/amplify-reebelotest-dev-83030/35b69dc0-1cdb-11ee-a516-0619470279b1",
+      "AmplifyAppId": "d1sqhf9zcyzksg"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1sqhf9zcyzksg",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}
