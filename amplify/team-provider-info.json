@@ -25,7 +25,7 @@
       "function": {
         "hello": {
           "deploymentBucketName": "amplify-reebelotest-dev-83030-deployment",
-          "s3Key": "amplify-builds/hello-5a535251715330314658-build.zip"
+          "s3Key": "amplify-builds/hello-41397a372f6138746236-build.zip"
         }
       },
       "api": {
