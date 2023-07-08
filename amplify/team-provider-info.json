@@ -24,6 +24,9 @@
       },
       "storage": {
         "reebelotest": {}
+      },
+      "function": {
+        "productOperations": {}
       }
     }
   }
