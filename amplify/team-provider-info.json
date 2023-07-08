@@ -26,7 +26,13 @@
         "reebelotest": {}
       },
       "function": {
-        "productOperations": {}
+        "productOperations": {
+          "deploymentBucketName": "amplify-reebelotest-dev-83030-deployment",
+          "s3Key": "amplify-builds/productOperations-37537157754a6e592b45-build.zip"
+        }
+      },
+      "api": {
+        "sallyapi": {}
       }
     }
   }
