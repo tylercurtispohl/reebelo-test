@@ -22,17 +22,6 @@
       "auth": {
         "reebelotest1855a6b6": {}
       },
-      "function": {
-        "hello": {
-          "deploymentBucketName": "amplify-reebelotest-dev-83030-deployment",
-          "s3Key": "amplify-builds/hello-41397a372f6138746236-build.zip"
-        },
-        "productCrud": {},
-        "orderCrud": {}
-      },
-      "api": {
-        "helloapi": {}
-      },
       "storage": {
         "reebelotest": {}
       }
