@@ -1,5 +1,20 @@
 {
-  "api": {},
+  "api": {
+    "sallyapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "productOperations"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "reebelotest1855a6b6": {
       "customAuth": false,
